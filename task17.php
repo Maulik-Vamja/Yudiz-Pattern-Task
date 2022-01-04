@@ -1,11 +1,15 @@
 <?php
-$n = 20;
-for ($i=1; $i <= $n ; $i++) { 
-    for ($j=1; $j <= $n; $j++) { 
-        if($j <$i)
-            echo ("&nbsp;");
-        else
-            echo "$j";
+$n = 10;
+for($i=1;$i<=$n;$i++){
+
+    for($j=1;$j<=$n;$j++){
+        if($j<$i){
+            echo("&nbsp&nbsp");
+        }else{
+            echo($j);
+        }
+
     }
-    echo "<br>";
+    
+    echo("<br>");
 }

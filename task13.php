@@ -25,9 +25,9 @@
             $n = $_POST['value'];
             for ($i=1; $i <=$n ; $i++) {
                 for ($k= $n; $k > $i ; $k--) 
-                    echo ("&nbsp");
+                    echo ("&nbsp;&nbsp;");
                 for ($j=1; $j <=$i ; $j++) { 
-                    echo " _*_ ";
+                    echo "_*_";
                 }
                 echo "<br>";
             }

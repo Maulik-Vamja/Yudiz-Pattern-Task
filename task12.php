@@ -23,25 +23,19 @@
         <?php
         if(isset($_POST['submit'])){
             $n = $_POST['value'];
-            for ($i=1; $i <= $n ; $i++) { 
-                for ($j=1; $j <= $n; $j++) { 
-                    if($j <= ($n-$i))
-                        echo ("&nbsp;");
-                    else
-                        echo " * ";
+            for ($i = $n + 1; $i > 1; $i--) {
+                for ($k = $i; $k <= $n + 1; $k++) {
+                    echo ("&nbsp;&nbsp;");
                 }
-                echo "<br>";
-            }
-            for ($i=2; $i <= $n; $i++) { 
-                for ($j=1; $j <= $n; $j++) { 
-                    if($j < $i)
-                        echo ("&nbsp;");
-                    else
-                        echo " * ";
+                for ($j = 1; $j <= (2 * $i - 1); $j++) {
+                    if ($j % 2 == 0) {
+                        echo ("&nbsp;*");
+                    } else {
+                        echo ("&nbsp;_");
                     }
-                echo "<br>";
+                }
+                echo ("<br>");
             }
-
         }
 ?>
         </div>

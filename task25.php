@@ -25,14 +25,23 @@
         if(isset($_POST['submit'])){
             $n = $_POST['s_value'];
             $e = $_POST['e_value'];
-            for ($i=$n; $i <=$e ; $i++) { 
-                for ($j=1; $j < $i; $j++) { 
-                    if($i%2==0){
+            if ($n % 2 == 0) {
+                for ($i = $n - 2; $i <= $e; $i = $i + 2) {
+                    for ($j = $n - 2; $j < $i; $j = $j + 2) {
                         echo $i;
                     }
+                    echo "<br>";
                 }
-                echo "<br>";
+            } else {
+                $d = $n + 1;
+                for ($i = $d - 2; $i <= $e; $i = $i + 2) {
+                    for ($j = $d - 2; $j < $i; $j = $j + 2) {
+                        echo $i;
+                    }
+                    echo "<br>";
+                }
             }
+            
         }
 ?>
         </div>

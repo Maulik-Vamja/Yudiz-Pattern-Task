@@ -1,11 +1,17 @@
 <?php
-$n = 10;
-for ($i=1; $i <= $n ; $i++) { 
-    for ($j=1; $j <= $n; $j++) { 
-        if($j <= ($n-$i))
-            echo "--";
-        else
-            echo " $j ";
+$n = 5;
+for ($i = 1; $i<= $n; $i++) {
+    for($j=$i;$j<$n;$j++){
+        
+        echo("&nbsp;&nbsp;");
+        
     }
-    echo "<br>";
+
+    for($k=1;$k<=$i;$k++){
+        echo($k);
+    }
+
+    echo("<br>");
+    
+
 }

@@ -5,7 +5,7 @@ for ($i=1; $i <=$n ; $i++) {
         continue;
     }
     for ($k= $n; $k > $i ; $k--) 
-        echo "-";
+        echo ("&nbsp;");
     for ($j=1; $j <=$i ; $j++) { 
         echo " * ";
     }

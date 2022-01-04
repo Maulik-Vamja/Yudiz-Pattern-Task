@@ -6,7 +6,7 @@ for ($i=1; $i <=$n ; $i++) {
         continue;
     }
     for ($k= $n; $k > $i ; $k--) 
-        echo("&nbsp;&nbsp;");
+        echo("&nbsp;");
     for ($j=1; $j <=$i ; $j++) { 
         echo " $j ";
     }
@@ -18,11 +18,10 @@ for($i = $n-1; $i>=1; $i--)
         continue;
     }
         for ($k= $n; $k > $i ; $k--) 
-           echo("&nbsp;&nbsp;");
+           echo("&nbsp;");
 
         for ($j=1; $j <=$i ; $j++) { 
             echo " $j ";
     }
     echo "<br>";
 }
-echo "</pre>";
